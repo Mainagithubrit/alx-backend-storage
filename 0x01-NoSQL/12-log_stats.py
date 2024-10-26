@@ -16,10 +16,12 @@ def nginx_request_logs_print(nginx_collection):
     ))
     print('{} status check'.format(status_checks_count))
 
+
 def execute():
     """Provides stats on nginx logs stored in MongoDB"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     print_nginx_request_logs(client.logs.nginx)
+
 
 if __name__ == '__main__':
     execute()
