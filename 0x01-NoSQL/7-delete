@@ -1,0 +1,4 @@
+// This script deletes all documents with name="Holberton school"
+// in a collection
+db.school.drop()
+
